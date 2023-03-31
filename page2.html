@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webmoon</title>
+<link rel="stylesheet" href="general.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Αρχική</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Λεπτομέρειες
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="page3.html">Μπαλέτο</a>
+    <a href="page4.html">Μιούζικαλ</a>
+    <a href="page5.html">Σύγχρονος χορός</a>
+    <a href="page6.html">Σάμπα</a>
+    <a href="page7.html">Belly dancing/Οριεντάλ</a>
+    <a href="page8.html">Pole dancing</a>
+    <a href="page9.html">Aerial</a>
+    <a href="page11.html">Βαλς</a>
+  </div>
+  </div> 
+  <a class="active" href="page2.html">Σχετικά</a>
+  <a href="test.html">Javascript</a>
+</div>
+<script>
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+<h2> Αυτές είναι κάποιες πηγές που χρησιμοποιήσαμε.</h2>
+<p><b><a href="https://el.wikipedia.org/wiki/%CE%9C%CF%80%CE%B1%CE%BB%CE%AD%CF%84%CE%BF"> Μπαλέτο. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/%CE%9C%CE%B9%CE%BF%CF%8D%CE%B6%CE%B9%CE%BA%CE%B1%CE%BB"> Μιούζικαλ. </b></a></p>
+<p><b><a href="https://en.wikipedia.org/wiki/Contemporary_dance"> Σύχγρονος χορός/Contemporary. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/%CE%A3%CE%AC%CE%BC%CF%80%CE%B1"> Σάμπα. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/%CE%A7%CE%BF%CF%81%CF%8C%CF%82_%CE%BF%CF%81%CE%B9%CE%B5%CE%BD%CF%84%CE%AC%CE%BB"> Οριεντάλ/Belly dancing. </b></a></p>
+<p><b><a href="https://www.verticalwise.com/el/proeleysi-pole-dancing/"> Pole dancing. </b></a></p>
+<p><b><a href="https://en.wikipedia.org/wiki/Aerial_dance"> Aerial. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/Street_dance"> Street dance. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/%CE%92%CE%B1%CE%BB%CF%82"> Βαλς. </b></a></p>
+<p><b><a href="https://el.wikipedia.org/wiki/Break_Dance"> Break dance. </b></a></p>
+
+</body>
+</html>
